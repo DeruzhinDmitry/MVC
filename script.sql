@@ -34,21 +34,21 @@ CREATE TABLE `todo_items` (
 --
 
 INSERT INTO `todo_items` (`id`, `email`, `text`, `status`, `name`, `done`) VALUES
-(1, 'test@test.com', 'test', '1231', 'Test user', 1),
-(2, 'test2@test.com', 'test2', 'in progress', 'Test user2', 0),
+(1, 'test1@test.com', 'test1', 'in progress', 'User name 1', 1),
+(2, 'test2@test.com', 'test2', 'in progress', 'User name 2', 0),
 (3, 'test3@test.com', 'test3', 'In progress', 'User name 3', 0),
-(4, 'test4@test.com', 'test3', 'In progress', 'User name 4', 0),
-(5, 'test5@test.com', 'test3', 'In progress', 'User name 5', 0),
-(6, 'test6@test.com', 'test3', 'In progress', 'User name 6', 0),
-(7, 'test7@test.com', 'test3', 'In progress', 'User name 7', 0),
-(8, '2@we.com', '3', '4', '1', 0),
-(9, '2@we.com', '3', '4', '1', 0),
-(10, '2@we.com', '3', '4', '1', 0),
-(11, '2@we.com', '3', '4', '1', 0),
-(12, '2@we.com', '3', '4', '1', 0),
-(13, '2@s2.sdas', '4', '3', '1', 1),
-(14, '', '', '', '', 0),
-(15, '3@3.com', '2', '7', '1', 0);
+(4, 'test4@test.com', 'test4', 'In progress', 'User name 4', 0),
+(5, 'test5@test.com', 'test5', 'In progress', 'User name 5', 0),
+(6, 'test6@test.com', 'test6', 'In progress', 'User name 6', 0),
+(7, 'test7@test.com', 'test7', 'In progress', 'User name 7', 0),
+(8, 'test8@test.com', 'test8', 'In progress', 'User name 8', 0),
+(9, 'test9@test.com', 'test9', 'In progress', 'User name 9', 0),
+(10, 'test10@test.com', 'test10', 'In progress', 'User name 10', 0),
+(11, 'test11@test.com', 'test11', 'In progress', 'User name 11', 0),
+(12, 'test12@test.com', 'test12', 'In progress', 'User name 12', 0),
+(13, 'test13@test.com', 'test13', 'In progress', 'User name 13', 1),
+(14, 'test14@test.com', 'test14', 'In progress', 'User name 14', 0),
+(15, 'test15@test.com', 'test15', 'In progress', 'User name 15', 0);
 
 --
 -- Indexes for dumped tables
