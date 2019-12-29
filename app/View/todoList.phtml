@@ -1,0 +1,25 @@
+<a href="/todo_item/new">New task</a>
+<table style="border: black solid 1px">
+    <tr>
+        <td>Name</td>
+        <td>E-mail</td>
+        <td>Text</td>
+        <td>Status</td>
+        <?php if (isset($_SESSION['login'])): ?>
+            <td>Action</td>
+        <?php endif; ?>
+    </tr>
+    <?php foreach ($data['list'] as $item) : ?>
+        <?php $done = $item['done'] == '1' ? '(edited by admin)' : '' ?>
+        <tr>
+            <td><?php echo $item['name'] ?></td>
+            <td><?php echo $item['email'] ?></td>
+            <td><?php echo $item['text'] ?></td>
+            <td><?php echo $item['status'] . $done ?></td>
+            <?php if (isset($_SESSION['login'])): ?>
+                <td><a href="/todo_item/edit/?item_id=<?=$item['id']?>">edit</a></td>
+            <?php endif; ?>
+        </tr>
+    <?php endforeach; ?>
+</table>
+<?php include PATH.'/app/View/paginator.phtml'; ?>

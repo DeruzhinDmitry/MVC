@@ -1,0 +1,16 @@
+<div>
+    <?php if (isset($data['paginator']['count']) && $data['paginator']['count'] > 1): ?>
+        <?php for ($i = 1; $i <= $data['paginator']['count']; $i++) {
+            $class = $data['paginator']['current'] == $i ? 'active': '';
+            $_GET['page'] = $i;
+            echo "<li class='$class'>";
+            echo "<a 
+                href='" . 'http://'
+                . $_SERVER['HTTP_HOST'] . '/'
+                . $_GET['url'] . '?'
+                . http_build_query(array_diff_key($_GET, ['url' => ''])) . "' 
+                >$i</a>";
+            echo '</li>';
+        } ?>
+    <?php endif; ?>
+</div>
