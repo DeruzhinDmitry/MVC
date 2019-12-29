@@ -1,0 +1,41 @@
+<form action="/todo_item/save" method="post">
+    <input type="hidden" name="id" value="<?=$data['id']?>">
+    <table>
+        <tr>
+            <td>Name: </td>
+            <td>
+                <input type="text" name="name" value="<?=isset($data['name']) ? $data['name'] : ''?>">
+            </td>
+        </tr>
+        <tr>
+            <td>Email: </td>
+            <td>
+                <input type="email" name="email" value="<?=isset($data['email']) ? $data['email'] : ''?>">
+            </td>
+        </tr>
+        <tr>
+            <td>Text: </td>
+            <td>
+                <input type="text" name="text" value="<?=isset($data['text']) ? $data['text'] : ''?>">
+            </td>
+        </tr>
+        <tr>
+            <td>Status: </td>
+            <td>
+                <input type="text" name="status" value="<?=isset($data['status']) ? $data['status'] : ''?>">
+            </td>
+        </tr>
+        <tr>
+            <td>Done: </td>
+            <td>
+                <input
+                    type="checkbox"
+                    name="done"
+                    value="done"
+                    <?=isset($data['done']) && $data['done'] ? 'checked' : ''?>
+                >
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="save">
+</form>
