@@ -1,2 +1,2 @@
 # MVC
-MVC project
+MVC project by Deruzhin Dmitry
